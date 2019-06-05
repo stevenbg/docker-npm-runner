@@ -1,7 +1,9 @@
 FROM node:current-alpine
 
-RUN apk update && apk add --no-cache autoconf automake g++ \
+RUN apk update && apk add --no-cache autoconf g++ \
     # jpegtran
     nasm \
     # gifsicle
-    make
+    automake make \
+    # optipng
+    zlib-dev
