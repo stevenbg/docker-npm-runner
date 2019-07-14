@@ -6,4 +6,9 @@ RUN apk update && apk add --no-cache autoconf g++ \
     # gifsicle
     automake make \
     # optipng
-    zlib-dev
+    zlib-dev \
+    # watching for changes
+    inotify-tools
+
+ENV HOME /tmp
+WORKDIR /app
