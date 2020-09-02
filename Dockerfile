@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM node:14-alpine
 
 RUN apk update && apk add --no-cache autoconf g++ \
     # jpegtran
